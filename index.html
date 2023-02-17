@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldy Store</title>
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__top row">
+                    <div class="header__contact col-xxl-4">
+
+                        <div class="header__select-wrapper">
+                            <select class="header__select">
+                                <option value="">Санкт-Петербург</option>
+                                <option value="">Москва</option>
+                                <option value="">Казань</option>
+                            </select>
+                        </div>
+
+                        <a class="header__tel" href="tel:88007852535">8&nbsp;800 785-25-35</a>
+                    </div>
+                    <div class="logo col-xxl-4">
+                        <img src="/img/logo.svg">
+                    </div>
+                    <div class="header__lk col-xxl-4">
+                        <div class="header__login">
+                            <a class="header__login-link">Вход</a>
+                            <a class="header__login-link">Регистрация</a>
+                        </div>
+                        <ul class="list list--header">
+                            <li>
+                                <button class="button">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z" fill="#303030"/>
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="button">
+                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="1.1" y1="8" x2="1.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                        <line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                        <line x1="11.1" y1="3" x2="11.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                    </svg>
+                                </button>
+                            </li>
+
+                            <li>
+                                <button class="button">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect y="4" width="16" height="13" rx="1" fill="white"/>
+                                        <mask id="path-2-inside-1_2895_18" fill="white">
+                                        <rect y="4" width="16" height="13" rx="1"/>
+                                        </mask>
+                                        <rect y="4" width="16" height="13" rx="1" stroke="#303030" stroke-width="3.2" mask="url(#path-2-inside-1_2895_18)"/>
+                                        <path d="M4 8L4 5C4 2.79086 5.79086 1 8 1V1C10.2091 1 12 2.79086 12 5L12 8" stroke="#303030" stroke-width="1.6"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="header__bottom row">
+                    <nav class="navigation col-xxl-9">
+                        <ul class="list navigation__list">
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Каталог</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Акции</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Бренды</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Магазины</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">О&nbsp;нас</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Доставка и&nbsp;оплата</a></li>
+                            <li><a href="javascript:void(0);" title="" class="navigation__link">Статьи</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__search col-xxl-3">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2 6.5C11.2 9.09574 9.09574 11.2 6.5 11.2C3.90426 11.2 1.8 9.09574 1.8 6.5C1.8 3.90426 3.90426 1.8 6.5 1.8C9.09574 1.8 11.2 3.90426 11.2 6.5ZM10.062 11.938C9.03902 12.6094 7.81512 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 8.1561 12.3806 9.66755 11.3609 10.8153L15.2728 14.7272L14 16L10 12L10.062 11.938Z" fill="#303030"/>
+                        </svg>
+
+                        <span>Поиск по&nbsp;сайту</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="superskid section">
+                <h1 class="title title--hidden"></h1>
+                <div class="swiper js-swiper-superskid">
+                    <div class="swiper-wrapper">
+                        <div class="superskid__wrapper swiper-slide row">
+                            <div class="superskid__content col-xxl-6">
+                                <!-- <div class=""> -->
+                                    <p class="superskid__sale">Суперскидка до&nbsp;60%</p>
+                                    <p class="superskid__product">НА&nbsp;БРИЛЛИАНТЫ</p>
+                                    <button class="button button--color">Подробнее</button>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/superskid/slide.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/superskid/slide.jpg" media="(max-width: 2400px)">
+                                    <img src="img/superskid/slide.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="superskid__wrapper swiper-slide row">
+                            <div class="superskid__content col-xxl-6">
+                                <!-- <div class=""> -->
+                                    <p class="superskid__sale">Суперскидка до&nbsp;60%</p>
+                                    <p class="superskid__product">НА&nbsp;БРИЛЛИАНТЫ</p>
+                                    <button class="button button--color">Подробнее</button>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/superskid/slide.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/superskid/slide.jpg" media="(max-width: 2400px)">
+                                    <img src="img/superskid/slide.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="superskid__wrapper swiper-slide row">
+                            <div class="superskid__content col-xxl-6">
+                                <!-- <div class=""> -->
+                                    <p class="superskid__sale">Суперскидка до&nbsp;60%</p>
+                                    <p class="superskid__product">НА&nbsp;БРИЛЛИАНТЫ</p>
+                                    <button class="button button--color">Подробнее</button>
+                                <!-- </div> -->
+                            </div>
+                            <div class="col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/superskid/slide.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/superskid/slide.jpg" media="(max-width: 2400px)">
+                                    <img src="img/superskid/slide.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination superskid__pagination"></div>
+
+                    <div class="swiper-button-prev button--prev"></div>
+                    <div class="swiper-button-next button--next"></div>
+                </div>
+            </section>
+            <section class="popular section">
+                <h2 class="title">Популярные категории</h2>
+                <!-- <div class="container"> -->
+                    <ul class="list popular__list row">
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/popular/product-1.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/popular/product-1.jpg" media="(max-width: 2400px)">
+                                    <img src="img/popular/product-1.jpg" alt="">
+                                </picture>
+
+                                <span class="popular__info">Кольца</span>
+                            </a>
+                        </li>
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/popular/product-2.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/popular/product-2.jpg" media="(max-width: 2400px)">
+                                    <img src="img/popular/product-2.jpg" alt="">
+                                </picture>
+
+                                <span class="popular__info">Серьги</span>
+                            </a>
+                        </li>
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/popular/product-3.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/popular/product-3.jpg" media="(max-width: 2400px)">
+                                    <img src="img/popular/product-3.jpg" alt="">
+                                </picture>
+
+                                <span class="popular__info">Помолвочные кольца</span>
+                            </a>
+                        </li>
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/popular/product-4.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/popular/product-4.jpg" media="(max-width: 2400px)">
+                                    <img src="img/popular/product-4.jpg" alt="">
+                                </picture>
+
+                                <span class="popular__info">Браслеты</span>
+                            </a>
+                        </li>
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <!-- <a href="javascript:void(0);" class="popular__link"> -->
+                                    <picture class="picture">
+                                        <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                        <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                        <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                        <source type="image/webp" srcset="img/popular/product-5.webp" media="(max-width: 2400px)">
+                                        <source type="image/jpeg" srcset="img/popular/product-5.jpg" media="(max-width: 2400px)">
+                                        <img src="img/popular/product-5.jpg" alt="">
+                                    </picture>
+
+                                    <span class="popular__info">Колье и&nbsp;подвески</span>
+                            </a>
+                        </li>
+                        <li class="popular__item col-xxl-2">
+                            <a href="javascript:void(0);" class="popular__link">
+                                <!-- <a href="javascript:void(0);" class="popular__link"> -->
+                                    <picture class="picture">
+                                        <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                        <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                        <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                        <source type="image/webp" srcset="img/popular/product-6.webp" media="(max-width: 2400px)">
+                                        <source type="image/jpeg" srcset="img/popular/product-6.jpg" media="(max-width: 2400px)">
+                                        <img src="img/popular/product-6.jpg" alt="">
+                                    </picture>
+
+                                    <span class="popular__info">Часы</span>
+                            <!-- </a> -->
+                            </a>
+                        </li>
+                    </ul>
+                <!-- </div> -->
+            </section>
+
+            <section class="sale section">
+                <h2 class="title title--sale">Распродажа</h2>
+                <div class="sale__wrapper-tabs js-wrapper-tabs">
+                    <div class="sale__wrapper-button">
+                        <button class="button button--tabs js-tabs active" data-tabs-path="1">Кольца</button>
+                        <button class="button button--tabs js-tabs" data-tabs-path="2">Серьги</button>
+                        <button class="button button--tabs js-tabs" data-tabs-path="3">Браслеты</button>
+                        <button class="button button--tabs js-tabs" data-tabs-path="4">Часы</button>
+                    </div>
+
+                    <div class="swiper-button-prev button--prev"></div>
+                    <div class="swiper-button-next button--next"></div>
+
+                        <div class="sale__wrapper-content active js-tabs-content swiper js-sale-collection" data-tabs-target="1">
+                            <div class="swiper-wrapper">
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="swiper sale__wrapper-content js-tabs-content js-sale-collection" data-tabs-target="2">
+                            <div class="swiper-wrapper">
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sale__wrapper-content js-tabs-content swiper js-sale-collection" data-tabs-target="3">
+                            <div class="swiper-wrapper">
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sale__wrapper-content js-tabs-content swiper js-sale-collection" data-tabs-target="4">
+                            <div class="swiper-wrapper">
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list row swiper-slide sale__list">
+                                    <li class="col-xxl-3">
+                                        <span class="sale__promo"></span>
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture swiper-slide picture--sale">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-1.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-1.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-1.jpg" alt="">
+                                                </picture>
+                                            </div>
+
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">41&nbsp;000&nbsp;₽</span>
+                                            <span class="sale__price-no-active">65&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+    
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-2.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-2.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-2.jpg" alt="">
+                                                </picture>
+                                            </div>
+    
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">56&nbsp;000&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-3.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-3.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-3.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">37&nbsp;500&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xxl-3">
+                                        <div class="sale__swiper swiper js-sale-product">
+                                            <div class="swiper-wrapper">
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                                <picture class="picture picture--sale swiper-slide">
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                                    <source type="image/webp" srcset="img/sale-rings/product-4.webp" media="(max-width: 2400px)">
+                                                    <source type="image/jpeg" srcset="img/sale-rings/product-4.jpg" media="(max-width: 2400px)">
+                                                    <img src="img/sale-rings/product-4.jpg" alt="">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-pagination sale__pagination"></div>
+                                        </div>
+    
+                                        <div class="sale__price-wrapper">
+                                            <span class="sale__price-active">39&nbsp;200&nbsp;₽</span>
+                                            <p>Стильное кольцо из&nbsp;белого золота c&nbsp;бриллиантами</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <aside class="advertisement">
+                <div class="swiper js-advertisement-swiper">
+                    <ul class="list swiper-wrapper row">
+                        <li class="swiper-slide xxl-3">
+                            <p>Скидки на&nbsp;все украшения с&nbsp;бриллиантами</p>
+                        </li>
+                        <li class="swiper-slide xxl-3">
+                            <p>Скидки на&nbsp;кольца и&nbsp;браслеты</p>
+                        </li>
+                        <li class="swiper-slide xxl-3">
+                            <p>снижение цен на&nbsp;обручальные кольца</p>
+                        </li>
+                        <li class="swiper-slide xxl-3"></li>
+                        <li class="swiper-slide xxl-3"></li>
+                        <li class="swiper-slide xxl-3"></li>
+                        <li class="swiper-slide xxl-3"></li>
+                        <li class="swiper-slide xxl-3"></li>
+                        <li class="swiper-slide xxl-3"></li>
+                    </ul>
+                </div>
+            </aside>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
