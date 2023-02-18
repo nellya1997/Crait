@@ -22,8 +22,13 @@ $dark: #303030;
 $white: #fff;
 $white1: #F8F8F8;
 $white2: #F0F0F0;
+$white3: #F5F5F5;
 $green: #5B8A8F;
+$green1: #43807F;
 $grey: #8F8F8F;
+$red: #E24B33;
+$orange: #E1A661;
+
 
 
 body {
@@ -88,7 +93,7 @@ body {
                 transform: translate(-50%,-50%);
                 background: url('../img/icon/arrow.svg') no-repeat 100% 100%;
                 width: 16px;
-                height: 16px;
+                height: 7px;
                 content: '';
             }
         }
@@ -103,14 +108,48 @@ body {
         }
 
         .sale__wrapper-tabs &--next,
-        .sale__wrapper-tabs &--prev {
+        .sale__wrapper-tabs &--prev,
+        .product-day &--next,
+        .product-day &--prev {
             top: 19px;
             right: 1px;
         }
 
-        .sale__wrapper-tabs &--prev {
+        .sale__wrapper-tabs &--prev,
+        .product-day &--prev {
             right: 64px;
             left: auto;
+        }
+
+        .product-day &--next,
+        .product-day &--prev {
+            top: 22px;
+        }
+
+        &--product-day {
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 14px;
+            padding: 5px 11px;
+            margin-right: 8px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &--basket {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 21px 0;
+        }
+
+        &--basket:first-child {
+            margin-bottom: 10px;
+            background-color: $dark;
+            color: $white;
         }
     }
 
@@ -118,17 +157,21 @@ body {
         padding: 0;
         list-style: none;
         margin-bottom: 0;
+
+        &--product-day {
+            padding-left: 12px;
+        }
     }
 
     // стили навигации
 
     .navigation {
         padding-right: 0;
-    }
 
-    .navigation__link {
-        color: $dark;
-        text-decoration: none;
+        &__link {
+            color: $dark;
+            text-decoration: none;
+        }
     }
 
     // логотип
@@ -150,12 +193,25 @@ body {
         margin-bottom: 41px;
 
         &--hidden {
-            // visibility: hidden;
             display: none;
         }
 
         &--sale {
             margin-bottom: 26px;
+        }
+
+        &--product-day {
+            margin-bottom: 35px;
+        }
+
+        &--h3 {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 13px;
+        }
+
+        &--articles {
+            margin-bottom: 44px;
         }
     }
 
@@ -163,16 +219,23 @@ body {
         display: block;
         width: 100%;
         height: 100%;
-        // background-color: red;
-        // padding: 50px;
 
         & img {
             width: 100%;
             height: 100%;
+            object-fit: contain;
         }
 
         &--sale {
             padding: 0 34px;
+        }
+
+        &--advertisement {
+            width: 50%;
+
+            & img {
+                object-position: bottom;
+            }
         }
     }
 
@@ -400,6 +463,309 @@ body {
             font-size: 14px;
             line-height: 14px;
             color: $grey;
+        }
+    }
+
+    .advertisement {
+
+        margin-bottom: 123px;
+
+        &__list {
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        &__item {
+            width: calc(33% - 9px);
+            display: flex;
+            max-height: 290px;
+            justify-content: space-between;
+            // background-color: red;
+            padding: 0;
+            background-color: $white1;
+        }
+
+        &__left-wrapper {
+            padding-top: 73px;
+            width: calc(50% - 13px);
+        }
+
+        &__content {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 32px;
+            padding-left: 27px;
+            margin: 0;
+            margin-bottom: 24px;
+        }
+
+        &__discount {
+            background-color: $green1;
+            text-align: center;
+            color: $white;
+
+            & span:first-child {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 38px;
+                margin-right: 13px;
+                display: inline-block;
+                vertical-align: super;
+            }
+
+            & span:last-child {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 52px;
+            }
+        }
+
+        &__item:nth-child(2) &__discount {
+            background-color: $red;
+        }
+
+        &__item:nth-child(3) &__discount {
+            background-color: $orange;
+        }
+    }
+
+    .product-day {
+        position: relative;
+        margin-bottom: 119px;
+
+        &__counter-wrapper,
+        &__counter,
+        &__wrapper-button,
+        &__wrapper-time,
+        &__wrapper-price {
+            display: flex;
+        }
+
+        &__wrapper {
+            justify-content: space-between;
+        }
+
+        &__wrapper-left {
+            width: calc(50% - 76px);
+            padding-top: 5px;
+        }
+
+        &__wrapper-right {
+            width: 50%;
+            padding-left: 88px;
+            padding-right: 0;
+        }
+
+        &__rating {
+            margin-bottom: 22px;
+        }
+
+        &__rating svg {
+            margin-right: 3px;
+        }
+
+        &__article {
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 14px;
+            display: inline-block;
+        }
+
+        &__counter {
+            background-color: $white3;
+            padding: 12px 14px;
+            justify-content: space-between;
+            width: 44%;
+        }
+
+        &__wrapper-time {
+            font-family: 'Inter';
+            flex-direction: column;
+            background-color: $white;
+            text-align: center;
+            padding: 5px 0;
+
+
+        }
+
+        &__wrapper-time span:first-child {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        &__wrapper-time span:nth-child(2) {
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 11px;
+        }
+
+        &__wrapper-price {
+            align-items: center;
+            width: calc(50% - 20px);
+            padding-top: 21px;
+        }
+
+        &__sale {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 13px;
+            border-radius: 15px;
+            padding: 2px 8px;
+            background-color: $red;
+            color: $white;
+        }
+
+        &__price-active,
+        &__price-no-active {
+            font-family: 'Inter';
+        }
+
+        &__price-active {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+            margin-right: 18px;
+        }
+
+        &__price-no-active {
+            font-size: 16px;
+            line-height: 16px;
+            margin-right: 17px;
+        }
+
+        &__counter-wrapper {
+            justify-content: space-between;
+            padding-right: 62px;
+            border-bottom: 1px solid $white2;
+            padding-bottom: 20px;
+            margin-bottom: 22px;
+        }
+
+        &__color {
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 12px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        &__input {
+            width: 30px;
+            height: 30px;
+            margin-right: 4px;
+        }
+
+        &__choise-color {
+            margin-bottom: 21px;
+            margin-right: 10px;
+        }
+
+        &__size {
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 12px;
+            // background-color: $white2;
+            position: relative;
+            margin-bottom: 17px;
+            display: inline-block;
+
+            &::after {
+                content: '?';
+                position: absolute;
+                top: 0;
+                // right: 0;
+                left: calc(100% + 8px);
+                background-color: $white2;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+            }
+        }
+
+        &__basket {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-column-gap: 29px;
+        }
+
+        &__wrapper-size {
+            margin-bottom: 47px;
+            display: flex;
+        }
+
+        &__wrapper-button {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+        }
+
+        &__item svg {
+            margin-right: 7px;
+            width: 21px;
+            height: 21px;
+            display: inline-block;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .articles {
+        position: relative;
+
+        &__link {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14px;
+            color: $dark;
+            text-decoration: none;
+            position: absolute;
+            top: 29px;
+            right: 41px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -50%;
+                transform: translate(-11%, -19%);
+                width: 25px;
+                height: 25px;
+                background: url('../img/icon/arrow-link.svg') no-repeat;
+            }
+        }
+
+        &__link-blog {
+            text-decoration: none;
+        }
+
+        &__info {
+            padding-top: 18px;
+        }
+
+        &__date {
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 14px;
+            color: $grey;
+            margin-bottom: 11px;
+            display: inline-block;
+        }
+
+        &__content {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $dark;
+            margin: 0;
         }
     }
 }

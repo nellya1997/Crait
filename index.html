@@ -273,8 +273,8 @@
                         <button class="button button--tabs js-tabs" data-tabs-path="4">Часы</button>
                     </div>
 
-                    <div class="swiper-button-prev button--prev"></div>
-                    <div class="swiper-button-next button--next"></div>
+                    <div class="swiper-button-prev swiper-button-prev--sale button--prev"></div>
+                    <div class="swiper-button-next swiper-button-next--sale button--next"></div>
 
                         <div class="sale__wrapper-content active js-tabs-content swiper js-sale-collection" data-tabs-target="1">
                             <div class="swiper-wrapper">
@@ -1511,26 +1511,518 @@
             </section>
 
             <aside class="advertisement">
-                <div class="swiper js-advertisement-swiper">
-                    <ul class="list swiper-wrapper row">
-                        <li class="swiper-slide xxl-3">
-                            <p>Скидки на&nbsp;все украшения с&nbsp;бриллиантами</p>
+                    <ul class="list advertisement__list row">
+                        <li class="col-xxl-4 advertisement__item">
+                            <div class="advertisement__left-wrapper">
+                                <p class="advertisement__content">СКИДКИ<br>НА&nbsp;ВСЕ&nbsp;УКРАШЕНИЯ С&nbsp;БРИЛЛИАНТАМИ</p>
+                                <div class="advertisement__discount">
+                                    <span>До</span>
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                            <picture class="picture picture--advertisement">
+                                <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                <source type="image/webp" srcset="img/advertisement/product-1.webp" media="(max-width: 2400px)">
+                                <source type="image/jpeg" srcset="img/advertisement/product-1.jpg" media="(max-width: 2400px)">
+                                <img src="img/advertisement/product-1.jpg" alt="">
+                            </picture>
                         </li>
-                        <li class="swiper-slide xxl-3">
-                            <p>Скидки на&nbsp;кольца и&nbsp;браслеты</p>
+                        <li class="col-xxl-4 advertisement__item">
+                            <div class="advertisement__left-wrapper">
+                                <p class="advertisement__content">СКИДКИ НА&nbsp;КОЛЬЦА И&nbsp;БРАСЛЕТЫ</p>
+                                <div class="advertisement__discount">
+                                    <span>До</span>
+                                    <span>-40%</span>
+                                </div>
+                            </div>
+                            <picture class="picture picture--advertisement">
+                                <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                <source type="image/webp" srcset="img/advertisement/product-2.webp" media="(max-width: 2400px)">
+                                <source type="image/jpeg" srcset="img/advertisement/product-2.jpg" media="(max-width: 2400px)">
+                                <img src="img/advertisement/product-2.jpg" alt="">
+                            </picture>
                         </li>
-                        <li class="swiper-slide xxl-3">
-                            <p>снижение цен на&nbsp;обручальные кольца</p>
+                        <li class="col-xxl-4 advertisement__item">
+                            <div class="advertisement__left-wrapper">
+                                <p class="advertisement__content">СНИЖЕНИЕ ЦЕН НА&nbsp;ОБРУЧАЛЬНЫЕ КОЛЬЦА</p>
+                                <div class="advertisement__discount">
+                                    <span>До</span>
+                                    <span>-60%</span>
+                                </div>
+                            </div>
+                            <picture class="picture picture--advertisement">
+                                <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                <source type="image/webp" srcset="img/advertisement/product-3.webp" media="(max-width: 2400px)">
+                                <source type="image/jpeg" srcset="img/advertisement/product-3.jpg" media="(max-width: 2400px)">
+                                <img src="img/advertisement/product-3.jpg" alt="">
+                            </picture>
                         </li>
-                        <li class="swiper-slide xxl-3"></li>
-                        <li class="swiper-slide xxl-3"></li>
-                        <li class="swiper-slide xxl-3"></li>
-                        <li class="swiper-slide xxl-3"></li>
-                        <li class="swiper-slide xxl-3"></li>
-                        <li class="swiper-slide xxl-3"></li>
                     </ul>
-                </div>
             </aside>
+
+            <section class="product-day section">
+                <h2 class="title title--product-day">Товар дня</h2>
+                <div class="swiper js-swiper-product-day">
+                    <div class="product-day__wrapper swiper-wrapper">
+                        <div class="row swiper-slide">
+                            <div class="product-day__wrapper-left col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/product-day/product.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/product-day/product.jpg" media="(max-width: 2400px)">
+                                    <img src="img/product-day/product.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="product-day__wrapper-right col-xxl-6">
+                                <div class="product-day__rating">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <span>4,2</span>
+                                </div>
+                                <h3 class="title title--h3">Кольцо из&nbsp;золота с бриллиантами</h3>
+                                <span class="product-day__article">Артикул: 1012076</span>
+
+                                <div class="product-day__counter-wrapper">
+                                    <div class="product-day__wrapper-price">
+                                        <span class="product-day__price-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__price-no-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__sale">-45%</span>
+                                    </div>
+                                    <div class="product-day__counter">
+                                        <div class="product-day__wrapper-time">
+                                            <span>12</span>
+                                            <span>часов</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>46</span>
+                                            <span>минут</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>51</span>
+                                            <span>секунд</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <span class="product-day__color">ЦВЕТ</span>
+                                <div class="product-day__choise-color">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                </div>
+
+                                <span class="product-day__size">РАЗМЕР</span>
+
+                                <div class="product-day__wrapper-size">
+                                    <button class="button button--product-day">16,5</button>
+                                    <button class="button button--product-day">17,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                </div>
+
+                                <div class="product-day__basket">
+                                    <div class="product-day__wrapper-button">
+                                        <button class="button button--basket">В&nbsp;КОРЗИНУ</button>
+                                        <button class="button button--basket">КУПИТЬ В&nbsp;1&nbsp;КЛИК</button>
+                                    </div>
+                                    <div class="product-day__interactions">
+                                        <ul class="list list--product-day">
+                                            <li class="product-day__item">
+                                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" fill="#C9C9C9"/>
+                                                </svg>
+
+                                                <span>Сохранить</span>
+                                            </li>
+                                            <li class="product-day__item">
+                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="1.1" y1="8" x2="1.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="11.1" y1="3" x2="11.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                </svg>
+                                                <span>Сравнить</span>
+                                            </li>
+                                            <li class="product-day__item">
+                                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66667 3.58329C9.66667 1.97246 10.9725 0.666626 12.5833 0.666626C14.1942 0.666626 15.5 1.97246 15.5 3.58329C15.5 5.19411 14.1942 6.49996 12.5833 6.49996C11.769 6.49996 11.0327 6.16626 10.5036 5.62816L6.22756 8.21884C6.29649 8.46745 6.33333 8.7294 6.33333 8.99996C6.33333 9.24301 6.3036 9.47912 6.24758 9.70485L10.6009 12.2773C11.1212 11.7949 11.8178 11.5 12.5833 11.5C14.1942 11.5 15.5 12.8058 15.5 14.4166C15.5 16.0274 14.1942 17.3333 12.5833 17.3333C10.9725 17.3333 9.66667 16.0274 9.66667 14.4166C9.66667 14.1736 9.69639 13.9375 9.75241 13.7118L5.39908 11.1394C4.87875 11.6217 4.18214 11.9166 3.41667 11.9166C1.80585 11.9166 0.5 10.6108 0.5 8.99996C0.5 7.38914 1.80585 6.08329 3.41667 6.08329C4.15373 6.08329 4.82695 6.3567 5.34042 6.80763L9.72225 4.15284C9.68578 3.96864 9.66667 3.7782 9.66667 3.58329ZM12.5833 2.33329C11.893 2.33329 11.3333 2.89294 11.3333 3.58329C11.3333 4.27364 11.893 4.83329 12.5833 4.83329C13.2737 4.83329 13.8333 4.27364 13.8333 3.58329C13.8333 2.89294 13.2737 2.33329 12.5833 2.33329ZM3.41667 7.74996C2.72632 7.74996 2.16667 8.30961 2.16667 8.99996C2.16667 9.69031 2.72632 10.25 3.41667 10.25C4.10701 10.25 4.66667 9.69031 4.66667 8.99996C4.66667 8.30961 4.10701 7.74996 3.41667 7.74996ZM12.5833 13.1666C11.893 13.1666 11.3333 13.7263 11.3333 14.4166C11.3333 15.107 11.893 15.6666 12.5833 15.6666C13.2737 15.6666 13.8333 15.107 13.8333 14.4166C13.8333 13.7263 13.2737 13.1666 12.5833 13.1666Z" fill="#C9C9C9"/>
+                                                </svg>
+
+                                                <span>Сравнить</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row swiper-slide">
+                            <div class="product-day__wrapper-left col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/product-day/product.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/product-day/product.jpg" media="(max-width: 2400px)">
+                                    <img src="img/product-day/product.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="product-day__wrapper-right col-xxl-6">
+                                <div class="product-day__rating">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <span>4,2</span>
+                                </div>
+                                <h3 class="title title--h3">Кольцо из&nbsp;золота с бриллиантами</h3>
+                                <span class="product-day__article">Артикул: 1012076</span>
+
+                                <div class="product-day__counter-wrapper">
+                                    <div class="product-day__wrapper-price">
+                                        <span class="product-day__price-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__price-no-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__sale">-45%</span>
+                                    </div>
+                                    <div class="product-day__counter">
+                                        <div class="product-day__wrapper-time">
+                                            <span>12</span>
+                                            <span>часов</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>46</span>
+                                            <span>минут</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>51</span>
+                                            <span>секунд</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <span class="product-day__color">ЦВЕТ</span>
+                                <div class="product-day__choise-color">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                </div>
+
+                                <span class="product-day__size">РАЗМЕР</span>
+                                <!-- <span>?</span> -->
+
+                                <div class="product-day__wrapper-size">
+                                    <button class="button button--product-day">16,5</button>
+                                    <button class="button button--product-day">17,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                </div>
+
+                                <div class="product-day__basket">
+                                    <div class="product-day__wrapper-button">
+                                        <button class="button button--basket">В&nbsp;КОРЗИНУ</button>
+                                        <button class="button button--basket">КУПИТЬ В&nbsp;1&nbsp;КЛИК</button>
+                                    </div>
+                                    <div class="product-day__interactions">
+                                        <ul class="list list--product-day">
+                                            <li>
+                                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z" fill="#303030"/>
+                                                </svg>
+
+                                                <span>Сохранить</span>
+                                            </li>
+                                            <li>
+                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="1.1" y1="8" x2="1.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="11.1" y1="3" x2="11.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                </svg>
+                                                <span>Сравнить</span>
+                                            </li>
+                                            <li>
+                                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66667 3.58329C9.66667 1.97246 10.9725 0.666626 12.5833 0.666626C14.1942 0.666626 15.5 1.97246 15.5 3.58329C15.5 5.19411 14.1942 6.49996 12.5833 6.49996C11.769 6.49996 11.0327 6.16626 10.5036 5.62816L6.22756 8.21884C6.29649 8.46745 6.33333 8.7294 6.33333 8.99996C6.33333 9.24301 6.3036 9.47912 6.24758 9.70485L10.6009 12.2773C11.1212 11.7949 11.8178 11.5 12.5833 11.5C14.1942 11.5 15.5 12.8058 15.5 14.4166C15.5 16.0274 14.1942 17.3333 12.5833 17.3333C10.9725 17.3333 9.66667 16.0274 9.66667 14.4166C9.66667 14.1736 9.69639 13.9375 9.75241 13.7118L5.39908 11.1394C4.87875 11.6217 4.18214 11.9166 3.41667 11.9166C1.80585 11.9166 0.5 10.6108 0.5 8.99996C0.5 7.38914 1.80585 6.08329 3.41667 6.08329C4.15373 6.08329 4.82695 6.3567 5.34042 6.80763L9.72225 4.15284C9.68578 3.96864 9.66667 3.7782 9.66667 3.58329ZM12.5833 2.33329C11.893 2.33329 11.3333 2.89294 11.3333 3.58329C11.3333 4.27364 11.893 4.83329 12.5833 4.83329C13.2737 4.83329 13.8333 4.27364 13.8333 3.58329C13.8333 2.89294 13.2737 2.33329 12.5833 2.33329ZM3.41667 7.74996C2.72632 7.74996 2.16667 8.30961 2.16667 8.99996C2.16667 9.69031 2.72632 10.25 3.41667 10.25C4.10701 10.25 4.66667 9.69031 4.66667 8.99996C4.66667 8.30961 4.10701 7.74996 3.41667 7.74996ZM12.5833 13.1666C11.893 13.1666 11.3333 13.7263 11.3333 14.4166C11.3333 15.107 11.893 15.6666 12.5833 15.6666C13.2737 15.6666 13.8333 15.107 13.8333 14.4166C13.8333 13.7263 13.2737 13.1666 12.5833 13.1666Z" fill="#C9C9C9"/>
+                                                </svg>
+
+                                                <span>Сравнить</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row swiper-slide">
+                            <div class="product-day__wrapper-left col-xxl-6">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/product-day/product.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/product-day/product.jpg" media="(max-width: 2400px)">
+                                    <img src="img/product-day/product.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="product-day__wrapper-right col-xxl-6">
+                                <div class="product-day__rating">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.5 1.26413L10.339 5.53451L10.4564 5.80719L10.7521 5.83461L15.3817 6.26399L11.8886 9.33262L11.6656 9.52856L11.7309 9.81819L12.7531 14.3539L8.75528 11.9801L8.5 11.8285L8.24472 11.9801L4.24687 14.3539L5.26913 9.81819L5.33441 9.52856L5.11136 9.33262L1.61828 6.264L6.24794 5.83461L6.54356 5.80719L6.66099 5.53451L8.5 1.26413Z" stroke="#E1A661"/>
+                                    </svg>
+
+                                    <span>4,2</span>
+                                </div>
+                                <h3 class="title title--h3">Кольцо из&nbsp;золота с бриллиантами</h3>
+                                <span class="product-day__article">Артикул: 1012076</span>
+
+                                <div class="product-day__counter-wrapper">
+                                    <div class="product-day__wrapper-price">
+                                        <span class="product-day__price-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__price-no-active">22&nbsp;000&nbsp;₽</span>
+                                        <span class="product-day__sale">-45%</span>
+                                    </div>
+                                    <div class="product-day__counter">
+                                        <div class="product-day__wrapper-time">
+                                            <span>12</span>
+                                            <span>часов</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>46</span>
+                                            <span>минут</span>
+                                        </div>
+                                        <div class="product-day__wrapper-time">
+                                            <span>51</span>
+                                            <span>секунд</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <span class="product-day__color">ЦВЕТ</span>
+                                <div class="product-day__choise-color">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                    <input class="product-day__input" type="radio">
+                                </div>
+
+                                <span class="product-day__size">РАЗМЕР</span>
+
+                                <div class="product-day__wrapper-size">
+                                    <button class="button button--product-day">16,5</button>
+                                    <button class="button button--product-day">17,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">18,5</button>
+                                    <button class="button button--product-day">19</button>
+                                    <button class="button button--product-day">19,5</button>
+                                    <button class="button button--product-day">19,5</button>
+                                </div>
+
+                                <div class="product-day__basket">
+                                    <div class="product-day__wrapper-button">
+                                        <button class="button button--basket">В&nbsp;КОРЗИНУ</button>
+                                        <button class="button button--basket">КУПИТЬ В&nbsp;1&nbsp;КЛИК</button>
+                                    </div>
+                                    <div class="product-day__interactions">
+                                        <ul class="list list--product-day">
+                                            <li>
+                                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.99998 15.5C8.46248 15.0233 7.85498 14.5275 7.21248 14H7.20415C4.94165 12.15 2.37748 10.0566 1.24498 7.54829C0.87291 6.74973 0.675732 5.8809 0.666635 4.99996C0.664151 3.7912 1.14895 2.63245 2.01149 1.7856C2.87402 0.938751 4.04147 0.475289 5.24998 0.49996C6.23384 0.501514 7.19651 0.785861 8.02331 1.31913C8.38662 1.55493 8.71533 1.84017 8.99998 2.16663C9.28622 1.84145 9.61502 1.55638 9.97748 1.31913C10.8039 0.785756 11.7664 0.501392 12.75 0.49996C13.9585 0.475289 15.1259 0.938751 15.9885 1.7856C16.851 2.63245 17.3358 3.7912 17.3333 4.99996C17.3248 5.88231 17.1276 6.75262 16.755 7.55246C15.6225 10.0608 13.0591 12.1533 10.7966 14L10.7883 14.0066C10.145 14.5308 9.53831 15.0266 9.00081 15.5066L8.99998 15.5ZM5.24998 2.16663C4.47374 2.15691 3.72504 2.454 3.16665 2.99329C2.62863 3.52176 2.32794 4.24583 2.33324 4.99996C2.34275 5.64204 2.48817 6.27484 2.75998 6.85663C3.29457 7.93888 4.0159 8.91834 4.89081 9.74996C5.71665 10.5833 6.66665 11.39 7.48831 12.0683C7.71581 12.2558 7.94748 12.445 8.17915 12.6341L8.32498 12.7533C8.54748 12.935 8.77748 13.1233 8.99998 13.3083L9.01081 13.2983L9.01581 13.2941H9.02081L9.02831 13.2883H9.03248H9.03664L9.05165 13.2758L9.08581 13.2483L9.09165 13.2433L9.10081 13.2366H9.10581L9.11331 13.23L9.66665 12.7758L9.81165 12.6566C10.0458 12.4658 10.2775 12.2766 10.505 12.0891C11.3266 11.4108 12.2775 10.605 13.1033 9.76746C13.9783 8.93626 14.6997 7.95705 15.2341 6.87496C15.5109 6.28813 15.6584 5.64871 15.6667 4.99996C15.6701 4.24816 15.3696 3.52687 14.8333 2.99996C14.276 2.45823 13.5272 2.1587 12.75 2.16663C11.8016 2.15857 10.8949 2.5561 10.2583 3.25913L8.99998 4.70913L7.74165 3.25913C7.10503 2.5561 6.19838 2.15857 5.24998 2.16663Z" fill="#303030"/>
+                                                </svg>
+
+                                                <span>Сохранить</span>
+                                            </li>
+                                            <li>
+                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="1.1" y1="8" x2="1.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="6.1" y1="-4.80825e-08" x2="6.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                    <line x1="11.1" y1="3" x2="11.1" y2="15" stroke="#303030" stroke-width="2.2"/>
+                                                </svg>
+                                                <span>Сравнить</span>
+                                            </li>
+                                            <li>
+                                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66667 3.58329C9.66667 1.97246 10.9725 0.666626 12.5833 0.666626C14.1942 0.666626 15.5 1.97246 15.5 3.58329C15.5 5.19411 14.1942 6.49996 12.5833 6.49996C11.769 6.49996 11.0327 6.16626 10.5036 5.62816L6.22756 8.21884C6.29649 8.46745 6.33333 8.7294 6.33333 8.99996C6.33333 9.24301 6.3036 9.47912 6.24758 9.70485L10.6009 12.2773C11.1212 11.7949 11.8178 11.5 12.5833 11.5C14.1942 11.5 15.5 12.8058 15.5 14.4166C15.5 16.0274 14.1942 17.3333 12.5833 17.3333C10.9725 17.3333 9.66667 16.0274 9.66667 14.4166C9.66667 14.1736 9.69639 13.9375 9.75241 13.7118L5.39908 11.1394C4.87875 11.6217 4.18214 11.9166 3.41667 11.9166C1.80585 11.9166 0.5 10.6108 0.5 8.99996C0.5 7.38914 1.80585 6.08329 3.41667 6.08329C4.15373 6.08329 4.82695 6.3567 5.34042 6.80763L9.72225 4.15284C9.68578 3.96864 9.66667 3.7782 9.66667 3.58329ZM12.5833 2.33329C11.893 2.33329 11.3333 2.89294 11.3333 3.58329C11.3333 4.27364 11.893 4.83329 12.5833 4.83329C13.2737 4.83329 13.8333 4.27364 13.8333 3.58329C13.8333 2.89294 13.2737 2.33329 12.5833 2.33329ZM3.41667 7.74996C2.72632 7.74996 2.16667 8.30961 2.16667 8.99996C2.16667 9.69031 2.72632 10.25 3.41667 10.25C4.10701 10.25 4.66667 9.69031 4.66667 8.99996C4.66667 8.30961 4.10701 7.74996 3.41667 7.74996ZM12.5833 13.1666C11.893 13.1666 11.3333 13.7263 11.3333 14.4166C11.3333 15.107 11.893 15.6666 12.5833 15.6666C13.2737 15.6666 13.8333 15.107 13.8333 14.4166C13.8333 13.7263 13.2737 13.1666 12.5833 13.1666Z" fill="#C9C9C9"/>
+                                                </svg>
+
+                                                <span>Сравнить</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev button--prev swiper-button-prev--product-day"></div>
+                <div class="swiper-button-next button--next swiper-button-next-product-day"></div>
+
+            </section>
+
+            <section class="section articles">
+                <h2 class="title title--articles">Статьи</h2>
+                <a class="articles__link" href="javascript:void(0);">ЧИТАТЬ ВСЕ</a>
+                <ul class="list row">
+                    <li class="col-xxl-3">
+                        <article>
+                            <a class="articles__link-blog" href="javascript:void(0);">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/articles/article-1.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/articles/article-1.jpg" media="(max-width: 2400px)">
+                                    <img src="img/articles/article-1.jpg" alt="">
+                                </picture>
+
+                                <div class="articles__info">
+                                    <time class="articles__date" datetime="2021 09 21">21&nbsp;сентября 2021</time>
+                                    <p class="articles__content">Обручальные кольца: тренды 2021</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-xxl-3">
+                        <article>
+                            <a class="articles__link-blog" href="javascript:void(0);">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/articles/article-2.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/articles/article-2.jpg" media="(max-width: 2400px)">
+                                    <img src="img/articles/article-2.jpg" alt="">
+                                </picture>
+
+                                <div class="articles__info">
+                                    <time class="articles__date" datetime="2021 09 25">25&nbsp;сентября 2021</time>
+                                    <p class="articles__content">Главные ювелирные тренды года</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-xxl-3">
+                        <article>
+                            <a class="articles__link-blog" href="javascript:void(0);">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/articles/article-3.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/articles/article-3.jpg" media="(max-width: 2400px)">
+                                    <img src="img/articles/article-3.jpg" alt="">
+                                </picture>
+
+                                <div class="articles__info">
+                                    <time class="articles__date" datetime="2021 09 21">21&nbsp;сентября 2021</time>
+                                    <p class="articles__content">Жемчуг: 7&nbsp;малоизвестных фактов о&nbsp;культовом украшении</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li class="col-xxl-3">
+                        <article>
+                            <a class="articles__link-blog" href="javascript:void(0);">
+                                <picture class="picture">
+                                    <!-- <source type="image/jpeg" srcset="img/guests-320.jpg" media="(max-width: 567px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-768.jpg" media="(max-width: 968px)"> -->
+                                    <!-- <source type="image/jpeg" srcset="img/guests-1024.jpg" media="(max-width: 1440px)"> -->
+                                    <source type="image/webp" srcset="img/articles/article-4.webp" media="(max-width: 2400px)">
+                                    <source type="image/jpeg" srcset="img/articles/article-4.jpg" media="(max-width: 2400px)">
+                                    <img src="img/articles/article-4.jpg" alt="">
+                                </picture>
+
+                                <div class="articles__info">
+                                    <time class="articles__date" datetime="2021 09 21">21&nbsp;сентября 2021</time>
+                                    <p class="articles__content">Как отличить золото от&nbsp;подделки: 10&nbsp;практических советов</p>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
         </main>
         <footer></footer>
     </div>

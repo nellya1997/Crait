@@ -21,42 +21,33 @@ let swiperSaleProduct = document.querySelectorAll('.js-sale-product');
 
 swiperSaleProduct.forEach(function (product){
     let swipers = new Swiper(product, {
-      // effect: 'fade',
+      effect: 'fade',
 
-      // fadeEffect: {
-      //   crossFade: true
-      // },
+      fadeEffect: {
+        crossFade: true
+      },
 
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-      // autoplay: {
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
     });
 });
 
 
 // подключение свайпера коллекции товара в секции SALE
 
-
-// let swiperSaleCollection = new Swiper('.js-sale-collection', {
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//     speed: 1000,
-// });
-
 let swiperSaleCollection = document.querySelectorAll('.js-sale-collection');
 
 swiperSaleCollection.forEach(function (collection){
     let swipers = new Swiper(collection, {
       navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-button-next--sale',
+              prevEl: '.swiper-button-prev--sale',
             },
             speed: 1000,
     })
@@ -93,4 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let swiperadvertisement = new Swiper('.js-advertisement-swiper', {
   slidesPerView: 3,
+});
+
+
+
+// подключение свайпера в секции product-day
+
+let swiperProductDay = new Swiper('.js-swiper-product-day', {
+  // slidesPerView: 3,
+    navigation: {
+      nextEl: '.swiper-button-next-product-day',
+      prevEl: '.swiper-button-prev--product-day',
+    },
 });
