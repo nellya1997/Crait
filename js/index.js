@@ -1,3 +1,12 @@
+// подключение селекта
+
+let element = document.querySelector('.js-choice');
+let choices = new Choices(element, {
+    searchEnabled: false,
+    // shouldSort: false,
+    itemSelectText: '',
+});
+
 // бургер меню
 
 let burger = document.querySelector('.burger');
@@ -9,14 +18,6 @@ function() {
     header.classList.toggle('active');
   }
 )
-
-// let navigation = document.querySelector('.js-navigation');
-
-// burger.addEventListener('click',
-// function() {
-//     navigation.classList.toggle('active');
-// }
-// )
 
 
 
