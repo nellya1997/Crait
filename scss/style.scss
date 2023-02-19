@@ -23,6 +23,7 @@ $white: #fff;
 $white1: #F8F8F8;
 $white2: #F0F0F0;
 $white3: #F5F5F5;
+$white3: #F5F5F5;
 $green: #5B8A8F;
 $green1: #43807F;
 $grey: #8F8F8F;
@@ -101,6 +102,7 @@ body {
                 transform: translate(-50%,-50%);
                 background: url('../img/icon/arrow.svg') no-repeat 100% 100%;
                 width: 16px;
+                height: 7px;
                 height: 7px;
                 content: '';
             }
@@ -256,6 +258,20 @@ body {
         &--articles {
             margin-bottom: 44px;
         }
+
+        &--product-day {
+            margin-bottom: 35px;
+        }
+
+        &--h3 {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 13px;
+        }
+
+        &--articles {
+            margin-bottom: 44px;
+        }
     }
 
     .picture {
@@ -267,6 +283,7 @@ body {
             width: 100%;
             height: 100%;
             object-fit: contain;
+            object-fit: contain;
         }
 
         // &--sale {
@@ -277,6 +294,14 @@ body {
             // width: 50%;
             width: 50%;
             
+
+            & img {
+                object-position: bottom;
+            }
+        }
+
+        &--advertisement {
+            width: 50%;
 
             & img {
                 object-position: bottom;
